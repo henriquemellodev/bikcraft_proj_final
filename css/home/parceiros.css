@@ -21,6 +21,10 @@
   border-left: 2px solid var(--cor-2);
 }
 
+.parceiros a {
+  margin: auto;
+}
+
 .parceiros img {
   margin: auto;
 }
@@ -53,5 +57,9 @@
 
   .parceiros li:nth-child(odd) {
     border-left: none;
+  }
+
+  .parceiros li {
+    padding: 20px;
   }
 }
