@@ -1,11 +1,12 @@
-/**/
 @import "./global/global.css";
-@import "./global/header.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
-/* Utils */
-@import "./utils/componentes.css";
-@import "./utils/tipografia.css";
-@import "./utils/cores.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilidades */
+@import "./utilidades/componentes.css";
 
 /* Home */
 @import "./home/introducao.css";
@@ -18,4 +19,3 @@
 
 /* Seguros */
 @import "./seguros/seguros.css";
-

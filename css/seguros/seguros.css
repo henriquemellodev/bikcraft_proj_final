@@ -1,5 +1,5 @@
 .seguros-bg {
-  background-color: var(--cor-11);
+  background: var(--cor-11);
 }
 
 .seguros {
@@ -43,7 +43,11 @@
   position: relative;
 }
 
-.seguros-item li ::before{
+.seguros-item li + li {
+  margin-top: 20px;
+}
+
+.seguros-item li::before {
   content: "";
   display: inline-block;
   width: 13px;
@@ -53,14 +57,11 @@
   left: -21px;
 }
 
-.seguros-item li + li {
-  margin-top: 20px;
-}
 .seguros-item a {
   grid-column: 1/-1;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .seguros {
     grid-template-columns: 1fr;
   }
