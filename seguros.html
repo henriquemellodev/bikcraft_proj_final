@@ -37,7 +37,7 @@
     </div>
 
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -46,10 +46,10 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -60,7 +60,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
   </main>
@@ -107,28 +107,28 @@
     <h2 class="font-1-xxl">perguntas frequentes<span class="cor-p1">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s cor-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor urna vitae nibh sollicitudin dapibus. Vestibulum nibh nulla, mattis id quam nec, dictum posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel facilisis mi, id ullamcorper orci. Etiam ut velit eu est mollis vehicula quis eget felis. Aliquam erat volutpat. Donec lacinia tristique pharetra. Phasellus sed dui est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque sit amet lectus diam.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor urna vitae nibh sollicitudin dapibus. Vestibulum nibh nulla, mattis id quam nec, dictum posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel facilisis mi, id ullamcorper orci. Etiam ut velit eu est mollis vehicula quis eget felis. Aliquam erat volutpat. Donec lacinia tristique pharetra. Phasellus sed dui est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque sit amet lectus diam.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s cor-9">Mauris ultricies dui libero, eget elementum justo mollis eu. Mauris lacinia eros sed lacus maximus sagittis. Aenean leo justo, imperdiet vel aliquam varius, lacinia eu ligula. Morbi vulputate odio lectus, at feugiat mi eleifend nec. Nulla egestas diam eu augue ultricies, nec tincidunt felis blandit. Morbi eget justo sed purus porta vulputate quis non orci. Phasellus quis nisl dolor. Curabitur sed accumsan elit.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Mauris ultricies dui libero, eget elementum justo mollis eu. Mauris lacinia eros sed lacus maximus sagittis. Aenean leo justo, imperdiet vel aliquam varius, lacinia eu ligula. Morbi vulputate odio lectus, at feugiat mi eleifend nec. Nulla egestas diam eu augue ultricies, nec tincidunt felis blandit. Morbi eget justo sed purus porta vulputate quis non orci. Phasellus quis nisl dolor. Curabitur sed accumsan elit.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-s cor-9">Nullam fermentum pretium turpis sed ornare. Duis ac suscipit neque. Duis ac eleifend lectus. Fusce magna lectus, volutpat ut maximus at, porta sed odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ullamcorper condimentum odio, malesuada tincidunt est egestas sed. Nunc ornare, lacus at tincidunt posuere, enim lacus congue nisl, quis varius metus tortor vehicula odio. Curabitur cursus varius elit a pharetra. Duis ante dolor, venenatis ac dictum nec, consectetur at purus. Nam ultrices tellus magna. Cras commodo, augue eu consectetur viverra, lacus leo placerat eros, id varius mauris dolor vitae justo. Nunc fringilla sapien risus, eget laoreet purus venenatis at.</dd>
+        <dt><button  class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Nullam fermentum pretium turpis sed ornare. Duis ac suscipit neque. Duis ac eleifend lectus. Fusce magna lectus, volutpat ut maximus at, porta sed odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ullamcorper condimentum odio, malesuada tincidunt est egestas sed. Nunc ornare, lacus at tincidunt posuere, enim lacus congue nisl, quis varius metus tortor vehicula odio. Curabitur cursus varius elit a pharetra. Duis ante dolor, venenatis ac dictum nec, consectetur at purus. Nam ultrices tellus magna. Cras commodo, augue eu consectetur viverra, lacus leo placerat eros, id varius mauris dolor vitae justo. Nunc fringilla sapien risus, eget laoreet purus venenatis at.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual a garantia que possuo?</dt>
-        <dd class="font-2-s cor-9">Vivamus laoreet pharetra libero. Maecenas gravida leo vitae orci rhoncus gravida. Integer rutrum varius tortor eu porttitor. Sed rhoncus leo vitae placerat pretium. In porta facilisis ligula sit amet pharetra. Suspendisse eu tortor nunc. Pellentesque vestibulum erat sapien, et tempor tellus accumsan ut. Mauris faucibus enim sem, at laoreet purus venenatis non. Quisque ex nibh, dapibus nec lorem egestas, euismod placerat libero. Integer eu auctor orci, in laoreet tortor.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">Vivamus laoreet pharetra libero. Maecenas gravida leo vitae orci rhoncus gravida. Integer rutrum varius tortor eu porttitor. Sed rhoncus leo vitae placerat pretium. In porta facilisis ligula sit amet pharetra. Suspendisse eu tortor nunc. Pellentesque vestibulum erat sapien, et tempor tellus accumsan ut. Mauris faucibus enim sem, at laoreet purus venenatis non. Quisque ex nibh, dapibus nec lorem egestas, euismod placerat libero. Integer eu auctor orci, in laoreet tortor.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s cor-9">Vivamus varius et dui non feugiat. Proin vel accumsan justo, quis pulvinar tellus. Sed tristique, augue quis hendrerit tristique, erat nisi feugiat neque, in bibendum purus lacus ut arcu. Sed vitae porttitor metus, at rutrum mauris. Ut at accumsan nisl. Cras lectus neque, sodales eu luctus a, vehicula quis arcu. Vestibulum nec orci tempor, rhoncus elit nec, iaculis neque. Aenean turpis elit, convallis ut posuere consectetur, euismod quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et feugiat tellus.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-9">Vivamus varius et dui non feugiat. Proin vel accumsan justo, quis pulvinar tellus. Sed tristique, augue quis hendrerit tristique, erat nisi feugiat neque, in bibendum purus lacus ut arcu. Sed vitae porttitor metus, at rutrum mauris. Ut at accumsan nisl. Cras lectus neque, sodales eu luctus a, vehicula quis arcu. Vestibulum nec orci tempor, rhoncus elit nec, iaculis neque. Aenean turpis elit, convallis ut posuere consectetur, euismod quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et feugiat tellus.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Quantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-s cor-9">In bibendum venenatis interdum. Nullam bibendum elit a maximus lacinia. Sed tristique pharetra varius. Suspendisse pellentesque volutpat ipsum, sollicitudin vestibulum risus convallis sit amet. In vitae pulvinar dui. Nam ut tempus ligula. Praesent placerat velit nec fringilla elementum. Curabitur nec turpis nec elit tempor volutpat vel ac elit. Vivamus ac pretium dolor. Mauris ornare et arcu eu rhoncus. Mauris sed velit ut enim lobortis cursus ut a nisl. Nulla ultrices augue at viverra viverra. Nunc dignissim augue eu nisl aliquet porta. Aenean aliquet urna eu viverra vulputate.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-9">In bibendum venenatis interdum. Nullam bibendum elit a maximus lacinia. Sed tristique pharetra varius. Suspendisse pellentesque volutpat ipsum, sollicitudin vestibulum risus convallis sit amet. In vitae pulvinar dui. Nam ut tempus ligula. Praesent placerat velit nec fringilla elementum. Curabitur nec turpis nec elit tempor volutpat vel ac elit. Vivamus ac pretium dolor. Mauris ornare et arcu eu rhoncus. Mauris sed velit ut enim lobortis cursus ut a nisl. Nulla ultrices augue at viverra viverra. Nunc dignissim augue eu nisl aliquet porta. Aenean aliquet urna eu viverra vulputate.</dd>
       </div>
     </dl>
   </article>
@@ -170,6 +170,8 @@
       <p class=" footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
